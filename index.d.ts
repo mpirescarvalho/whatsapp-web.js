@@ -550,6 +550,10 @@ declare namespace WAWebJS {
         unstar: () => Promise<void>,
         /** Get information about message delivery statuso */
         getInfo: () => Promise<MessageInfo | null>
+        /**
+         * Checks if the message has been revoked
+         */
+        checkRevoked: () => Promise<boolean>
     }
 
     /** ID that represents a message */
